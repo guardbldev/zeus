@@ -1,18 +1,7 @@
-# Roblox Studio Terminal Plugin
+# Zeus - A Roblox Terminal Plugin
 
-A powerful VS Code / PowerShell–inspired terminal for Roblox Studio that enables
-command-driven workflows, automation, analysis, and tooling for professional Roblox development.
-
----
-
-## 🚀 Overview
-
-This plugin introduces a fully interactive command-line interface into Roblox Studio.
-Developers can run commands to generate code, refactor projects, audit security,
-analyze performance, manage assets, and enforce team standards — all without leaving Studio.
-
-The goal is to replace repetitive UI workflows with fast, reproducible, scriptable commands.
-
+About:
+An extensible command-line framework for Roblox Studio that provides automation, static analysis, security auditing, performance profiling, and project validation through a powershell-like terminal user interface. From code generation and refactoring to security audits and build checks, this plugin brings development workflows into Roblox Studio.
 ---
 
 ## ✨ Core Features
@@ -37,13 +26,13 @@ The goal is to replace repetitive UI workflows with fast, reproducible, scriptab
 
 ## Features
 
-### 1. Command Parser & Autocomplete
+###  Command Parser & Autocomplete (in dev)
 - Tokenized command parsing
 - Flag validation
 - Path & instance autocomplete
 - Intelligent suggestions based on context
 
-### 2. Command History & Profiles
+### Command History & Profiles
 - Persistent command history
 - Saved command profiles
 - Searchable history (`Ctrl+R` style)
@@ -58,7 +47,7 @@ profile.run release
 
 ---
 
-### 3. Context-Aware Commands
+### Context-Aware Commands
 
 Commands automatically adapt to:
 
@@ -74,7 +63,7 @@ refactor.rename --snake
 
 ---
 
-### 4. Live Output Streams
+###. Live Output Streams
 
 * Real-time logs
 * Progress indicators
@@ -83,7 +72,7 @@ refactor.rename --snake
 
 ---
 
-### 5. Bulk Refactor Engine
+### Bulk Refactor Engine
 
 Safely refactor large projects.
 
@@ -102,7 +91,7 @@ refactor.preview
 
 ---
 
-### 6. Service & Instance Generator
+### Service & Instance Generator
 
 Generate standardized code & folders.
 
@@ -121,7 +110,7 @@ Supports:
 
 ---
 
-### 7. Script Dependency Graph
+### Script Dependency Graph
 
 * Analyzes all `require()` relationships
 * Detects circular dependencies
@@ -137,7 +126,7 @@ deps.export
 
 ---
 
-### 8. Dead Code & Asset Detection
+### Dead Code & Asset Detection
 
 * Detect unused scripts, modules, assets
 * Safe delete queue
@@ -152,7 +141,7 @@ cleanup.remove --unused
 
 ---
 
-### 9. Project Structure Validator
+### Project Structure Validator
 
 Enforces folder & naming rules.
 
@@ -167,7 +156,7 @@ Configurable via project config file.
 
 ---
 
-### 10. Static Code Analysis
+### Static Code Analysis
 
 Detects common Luau issues:
 
@@ -183,7 +172,7 @@ analyze.code
 
 ---
 
-### 11. Security Audit Tools
+### Security Audit Tools
 
 Finds exploitable patterns:
 
@@ -200,7 +189,7 @@ audit.security
 
 ---
 
-### 12. Performance Profiler
+### Performance Profiler
 
 Profiles runtime behavior:
 
@@ -217,7 +206,7 @@ profile.report
 
 ---
 
-### 13. Type & Interface Validator
+### Type & Interface Validator
 
 * Validates Luau types
 * Ensures return consistency
@@ -231,7 +220,7 @@ type.check
 
 ---
 
-### 14. Asset Sync & Version Pinning
+### Asset Sync & Version Pinning
 
 * Lock assets to versions
 * Detect version drift
@@ -246,7 +235,7 @@ asset.check
 
 ---
 
-### 15. Animation & Sound Inspector
+### Animation & Sound Inspector
 
 * Detect oversized assets
 * Identify unused animations/sounds
@@ -260,7 +249,7 @@ media.scan
 
 ---
 
-### 16. Tag & Attribute Manager
+### Tag & Attribute Manager
 
 Bulk manage CollectionService tags and Attributes.
 
@@ -274,7 +263,7 @@ attr.schema.validate
 
 ---
 
-### 17. Team-Safe Script Locking
+### Team-Safe Script Locking
 
 * Prevent conflicting edits
 * Studio-only locking
@@ -289,7 +278,7 @@ lock.release
 
 ---
 
-### 18. Environment Switching
+### Environment Switching
 
 Switch between environments instantly.
 
@@ -308,7 +297,7 @@ Controls:
 
 ---
 
-### 19. CI-Style Build Checks
+### CI-Style Build Checks
 
 Pre-publish validation suite.
 
@@ -326,7 +315,7 @@ build.check
 
 ---
 
-### 20. Extensible Plugin API
+### Extensible Plugin API
 
 Third-party command support.
 
