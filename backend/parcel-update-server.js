@@ -1,3 +1,6 @@
+// THIS IS NOT FINISHED COMPLETELY!
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
@@ -19,14 +22,14 @@ app.post('/parcelUpdate', async (req, res) => {
     // Fetch product from Parcel (simulate with public API call)
     // Replace with actual Parcel API/Webhook endpoint
     let productData = { version: "2.1.3", newSource: "-- latest Lua module source ..." };
-    // If you use real Parcel, check privacy/export permission per Parcel docs
+    // check privacy/export permission per Parcel docs
 
-    // Optionally fetch version history, diff here
+    //TODO:  Optionally fetch version history, diff here
 
     res.json({
         licensed: true,
         metadata: productData,
-        // optionally: versionHistory: [...]
+        // TODO: versionHistory: [...]
     });
 });
 
