@@ -1,0 +1,22 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Documentation",
+  "colors": {
+    "primary": "#0D9373"
+  },
+  "navigation": {
+    "pages": [
+      "introduction",
+      "installation",
+      {
+        "group": "Commands",
+        "pages": [
+          "commands/overview",
+          "commands/creating-a-command",
+          "commands/manage-commands"
+        ]
+      }
+    ]
+  }
+}
