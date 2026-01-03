@@ -11,11 +11,57 @@
       "installation",
       {
         "group": "Commands",
+        "icon": "command",
         "pages": [
           "commands/overview",
           "commands/creating-a-command",
           "commands/manage-commands"
         ]
+      },
+      {
+        "group": "Core",
+        "icon": "sun",
+        "pages": []
+      },
+      {
+        "group": "Automation",
+        "icon": "user-robot-xmarks",
+        "pages": []
+      },
+      {
+        "group": "Debugging",
+        "icon": "bug",
+        "pages": []
+      },
+      {
+        "group": "Analysis",
+        "icon": "book-open-reader",
+        "pages": []
+      },
+      {
+        "group": "Security",
+        "icon": "user-police",
+        "pages": []
+      },
+      {
+        "group": "Perfomance",
+        "icon": "database",
+        "pages": []
+      },
+      {
+        "group": "UI",
+        "icon": "screen-users",
+        "pages": []
+      },
+      {
+        "group": "Assets",
+        "icon": "car",
+        "pages": []
+      },
+      {
+        "group": "API",
+        "icon": "code",
+        "pages": []
       }
     ]
   }
