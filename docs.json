@@ -21,46 +21,86 @@
       {
         "group": "Core",
         "icon": "sun",
-        "pages": []
+        "pages": [
+          "core/profile",
+          "core/command-parser",
+          "core/terminal"
+        ]
       },
       {
         "group": "Automation",
         "icon": "user-robot-xmarks",
-        "pages": []
+        "pages": [
+          "automation/hot-reload",
+          "automation/generators",
+          "automation/refactor-engine"
+        ]
       },
       {
         "group": "Debugging",
         "icon": "bug",
-        "pages": []
+        "pages": [
+          "debugging/untitled-page",
+          "debugging/remote-replay",
+          "debugging/state-inspector"
+        ]
       },
       {
         "group": "Analysis",
         "icon": "book-open-reader",
-        "pages": []
+        "pages": [
+          "analysis/determine",
+          "analysis/graph-data",
+          "analysis/static-analysis"
+        ]
       },
       {
         "group": "Security",
         "icon": "user-police",
-        "pages": []
+        "pages": [
+          "security/logs",
+          "security/audit",
+          "security/trust"
+        ]
       },
       {
         "group": "Perfomance",
         "icon": "database",
-        "pages": []
+        "pages": [
+          "perfomance/network-inspector",
+          "perfomance/memory",
+          "perfomance/profiler"
+        ]
       },
       {
         "group": "UI",
         "icon": "screen-users",
-        "pages": []
+        "pages": [
+          "ui/theme",
+          "ui/localisation",
+          "ui/z-index"
+        ]
       },
       {
         "group": "Assets",
         "icon": "car",
-        "pages": []
+        "pages": [
+          "assets/asset-syncing",
+          "assets/animation",
+          "assets/audio"
+        ]
       },
       {
         "group": "API",
         "icon": "code",
+        "pages": [
+          "api/plugin-pai",
+          "api/command-api"
+        ]
+      },
+      {
+        "group": "Parcel",
+        "icon": "box-taped",
         "pages": []
       }
     ]

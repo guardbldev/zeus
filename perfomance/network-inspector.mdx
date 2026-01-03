@@ -1,0 +1,100 @@
+---
+title: "Network Inspector"
+description: "Analyze RemoteEvent and RemoteFunction payload sizes to reduce lag and bandwidth usage."
+---
+
+
+## Overview
+
+The Network Payload Inspector monitors RemoteEvent and RemoteFunction traffic to measure
+
+payload sizes, detect inefficient data structures, and identify network bottlenecks.
+
+This feature helps developers reduce lag caused by oversized or frequent remote calls.
+
+---
+
+## Benefits
+
+- Reduces server-client bandwidth usage
+
+- Prevents hidden lag spikes
+
+- Improves scalability for large player counts
+
+---
+
+## How It Works
+
+1. Remote calls are intercepted in a safe wrapper
+
+2. Payloads are serialized and measured
+
+3. Results are logged and ranked
+
+### Internal Behavior
+
+- Hooks RemoteEvent connections
+
+- Estimates serialized table size
+
+- Does NOT store sensitive player data
+
+---
+
+## Commands
+
+### Primary Commands
+
+```
+net.inspect
+```
+
+**Description:**
+
+Begins monitoring network payload sizes during runtime.
+
+**Options:**
+
+`-- live`  - This command shows payloads in real-time, this can help reduce lag reduction
+
+`-- threshold`  - This command shows the minimum size to report
+
+### Example Usage
+
+```
+net.inspect --threshold=5kb
+```
+
+What we get from this are the lists of the top remote calls by payload size and the higlights the problematic routes .
+
+### Output Example
+
+```
+net.inspect --threshold=5kb
+[]
+
+Output type: Console report
+Severity levels: Info, Warning
+Exportable (JSON): Yes 
+```
+
+---
+
+### Limits
+
+To prevent the plugin from taken down, we have taken various steps and added security features to comply with Roblox TOS. Features such as this include:
+
+- Does not modify remote behavior
+- Does not log player-identifiable data
+- Play mode only
+
+### When Best to use it
+
+Run this during high-profile simulations and use alongide the Performance Profiler for best results.
+
+#### Related Features
+
+\* [Remote Call Replay System](../debugging/remote-replay)
+
+\* [Security Audit Tools](../security/audit)
